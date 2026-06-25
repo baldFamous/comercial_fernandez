@@ -36,7 +36,7 @@ const localBusinessSchema = {
   telephone: "+56912345678",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Av. Principal 1234, Barrio Industrial",
+    streetAddress: "Baquedano 605",
     addressLocality: "Coquimbo",
     addressRegion: "Coquimbo",
     postalCode: "1770000",
@@ -44,8 +44,8 @@ const localBusinessSchema = {
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: -29.9533, 
-    longitude: -71.3395,
+    latitude: -29.9623, 
+    longitude: -71.33218,
   },
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
@@ -83,8 +83,18 @@ export default function RootLayout({
             
             {/* Actions */}
             <div className="hidden md:flex gap-4">
-              <button className="font-label-bold text-label-bold px-4 py-2 border border-primary text-primary rounded-DEFAULT hover:bg-surface-container transition-colors">Llamar Ahora</button>
-              <button className="font-label-bold text-label-bold px-4 py-2 bg-secondary text-on-secondary rounded-DEFAULT hover:bg-secondary-container transition-colors shadow-sm">Agendar Cita</button>
+              <a 
+                href="tel:+56912345678"
+                className="font-label-bold text-label-bold px-4 py-2 border border-primary text-primary rounded-DEFAULT hover:bg-surface-container transition-colors flex items-center justify-center"
+              >
+                Llamar Ahora
+              </a>
+              <a 
+                href="/contacto#cotizacion"
+                className="font-label-bold text-label-bold px-4 py-2 bg-secondary text-on-secondary rounded-DEFAULT hover:bg-secondary-container transition-colors shadow-sm flex items-center justify-center"
+              >
+                Agendar Cita
+              </a>
             </div>
             
             {/* Mobile Menu Toggle */}
@@ -110,7 +120,7 @@ export default function RootLayout({
             {/* Info Column */}
             <div className="flex flex-col gap-3">
               <a className="font-body-md text-body-md text-on-primary-container dark:text-on-tertiary-container hover:text-secondary-fixed transition-colors active:opacity-90" href="#">Horarios: Lun-Vie 09:00 - 18:00</a>
-              <a className="font-body-md text-body-md text-on-primary-container dark:text-on-tertiary-container hover:text-secondary-fixed transition-colors active:opacity-90" href="#">Av. Principal 1234, Santiago</a>
+              <a className="font-body-md text-body-md text-on-primary-container dark:text-on-tertiary-container hover:text-secondary-fixed transition-colors active:opacity-90" href="https://maps.google.com/?q=Baquedano+605,+Coquimbo" target="_blank" rel="noreferrer">Baquedano 605, Coquimbo</a>
             </div>
             {/* Legal Column */}
             <div className="flex flex-col gap-3 md:items-end">
@@ -126,14 +136,20 @@ export default function RootLayout({
 
         {/* Mobile Sticky Contact Bar */}
         <div className="md:hidden fixed bottom-0 left-0 right-0 glass-panel p-margin-mobile flex gap-4 z-50 shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
-          <button className="flex-1 flex justify-center items-center gap-2 border border-primary text-primary bg-surface font-label-bold text-label-bold py-3 rounded-DEFAULT">
+          <a 
+            href="tel:+56912345678"
+            className="flex-1 flex justify-center items-center gap-2 border border-primary text-primary bg-surface font-label-bold text-label-bold py-3 rounded-DEFAULT"
+          >
             <span className="material-symbols-outlined" data-icon="call">call</span>
             Llamar
-          </button>
-          <button className="flex-1 flex justify-center items-center gap-2 bg-secondary text-on-secondary font-label-bold text-label-bold py-3 rounded-DEFAULT shadow-sm">
+          </a>
+          <a 
+            href="/contacto#cotizacion"
+            className="flex-1 flex justify-center items-center gap-2 bg-secondary text-on-secondary font-label-bold text-label-bold py-3 rounded-DEFAULT shadow-sm"
+          >
             <span className="material-symbols-outlined" data-icon="chat">chat</span>
-            WhatsApp
-          </button>
+            Cotizar
+          </a>
         </div>
       </body>
     </html>

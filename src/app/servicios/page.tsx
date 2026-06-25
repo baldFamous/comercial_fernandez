@@ -38,9 +38,12 @@ export default function ServiciosPage() {
                 <span className="font-body-md text-body-md text-on-surface">Materiales homologados para máxima durabilidad.</span>
               </li>
             </ul>
-            <button className="self-start text-secondary font-label-bold text-label-bold flex items-center gap-2 hover:text-secondary-container transition-colors group/btn">
+            <a 
+              href="/contacto#cotizacion"
+              className="self-start text-secondary font-label-bold text-label-bold flex items-center gap-2 hover:text-secondary-container transition-colors group/btn"
+            >
               Cotizar Parabrisas <span className="material-symbols-outlined transition-transform group-hover/btn:translate-x-1">arrow_forward</span>
-            </button>
+            </a>
           </div>
         </article>
 
@@ -60,9 +63,12 @@ export default function ServiciosPage() {
             <p className="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
               Restauramos la línea original de tu vehículo tras colisiones mediante técnicas de desabollado de precisión. Empleamos herramientas de última generación y bancadas de tracción computarizadas para asegurar que la geometría del chasis vuelva a las especificaciones exactas del fabricante, garantizando tu seguridad.
             </p>
-            <button className="w-full bg-surface-container text-primary font-label-bold text-label-bold px-4 py-3 rounded hover:bg-surface-container-high transition-colors">
-              Ver Detalles
-            </button>
+            <a 
+              href="/contacto#cotizacion"
+              className="w-full bg-surface-container text-primary font-label-bold text-label-bold px-4 py-3 rounded hover:bg-surface-container-high transition-colors flex items-center justify-center"
+            >
+              Cotizar Desabolladura
+            </a>
           </div>
         </article>
 
@@ -82,9 +88,12 @@ export default function ServiciosPage() {
             <p className="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
               Acabados perfectos gracias a nuestra cabina de pintura presurizada y sistema de igualación de color computarizado. Utilizamos pinturas base agua amigables con el medio ambiente y barnices de alta resistencia (High Solid) que proporcionan un brillo duradero y protección superior contra los rayos UV y el desgaste diario.
             </p>
-            <button className="w-full bg-surface-container text-primary font-label-bold text-label-bold px-4 py-3 rounded hover:bg-surface-container-high transition-colors">
-              Ver Detalles
-            </button>
+            <a 
+              href="/contacto#cotizacion"
+              className="w-full bg-surface-container text-primary font-label-bold text-label-bold px-4 py-3 rounded hover:bg-surface-container-high transition-colors flex items-center justify-center"
+            >
+              Cotizar Pintura
+            </a>
           </div>
         </article>
       </div>

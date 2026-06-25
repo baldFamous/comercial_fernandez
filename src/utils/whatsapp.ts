@@ -4,7 +4,7 @@
 
 // NOTA: Reemplazar por el número real cuando el usuario lo provea.
 // Formato internacional sin símbolos (ej: 56912345678 para Chile)
-export const WHATSAPP_NUMBER = "56900000000"; 
+export const WHATSAPP_NUMBER = "56912345678"; 
 
 export function generateWhatsAppLink(baseMessage: string): string {
   // Aseguramos que el texto esté correctamente codificado para URL
