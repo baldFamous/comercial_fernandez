@@ -141,10 +141,10 @@ export default function GaleriaPage() {
           <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">¿Tu vehículo necesita atención?</h2>
           <p className="font-body-lg text-body-lg text-on-surface-variant mb-8">No esperes más. Agenda una evaluación técnica hoy mismo y vuelve a la ruta con seguridad.</p>
           <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-            <button className="w-full sm:w-auto px-8 py-3 bg-secondary text-on-secondary font-headline-md text-headline-md text-lg rounded shadow-sm hover:bg-secondary-container transition-colors flex items-center justify-center">
+            <a href="/contacto#cotizacion" className="w-full sm:w-auto px-8 py-3 bg-secondary text-on-secondary font-headline-md text-headline-md text-lg rounded shadow-sm hover:bg-secondary-container transition-colors flex items-center justify-center">
               <span className="material-symbols-outlined mr-2">calendar_month</span>
               Agendar Evaluación
-            </button>
+            </a>
           </div>
         </div>
       </section>

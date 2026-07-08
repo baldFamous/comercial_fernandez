@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
-import Link from "next/link";
-import Navigation from "@/components/Navigation";
+import Header from "@/components/Header";
 import "./globals.css";
 
 const inter = Inter({
@@ -71,38 +70,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} ${montserrat.variable} bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased`}>
         {/* TopNavBar */}
-        <header className="bg-surface dark:bg-on-surface border-b border-outline-variant docked full-width top-0 sticky z-50">
-          <div className="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-20">
-            {/* Brand */}
-            <div className="flex items-center gap-3">
-              <Link href="/" className="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed hidden sm:block">Comercial Fernández</Link>
-            </div>
-            
-            {/* Navigation Links */}
-            <Navigation />
-            
-            {/* Actions */}
-            <div className="hidden md:flex gap-4">
-              <a 
-                href="tel:+56912345678"
-                className="font-label-bold text-label-bold px-4 py-2 border border-primary text-primary rounded-DEFAULT hover:bg-surface-container transition-colors flex items-center justify-center"
-              >
-                Llamar Ahora
-              </a>
-              <a 
-                href="/contacto#cotizacion"
-                className="font-label-bold text-label-bold px-4 py-2 bg-secondary text-on-secondary rounded-DEFAULT hover:bg-secondary-container transition-colors shadow-sm flex items-center justify-center"
-              >
-                Agendar Cita
-              </a>
-            </div>
-            
-            {/* Mobile Menu Toggle */}
-            <button className="md:hidden text-primary p-2">
-              <span className="material-symbols-outlined" data-icon="menu">menu</span>
-            </button>
-          </div>
-        </header>
+        <Header />
 
         {/* Main Content */}
         <main className="flex-grow flex flex-col gap-section-gap">
