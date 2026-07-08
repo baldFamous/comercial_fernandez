@@ -14,9 +14,8 @@ export default function Home() {
         
         <div className="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24">
           <div className="max-w-2xl">
-            <span className="inline-block py-1 px-3 mb-4 rounded-full bg-surface-container border border-outline-variant font-label-bold text-label-bold text-primary">Servicio Técnico Profesional</span>
-            <h1 className="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary mb-6">Especialistas en Cristales y Carrocería en Coquimbo</h1>
-            <p className="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-xl">Devolvemos la seguridad y estética a tu vehículo con precisión mecánica. Atención rápida, materiales certificados y acabados impecables.</p>
+            <h1 className="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary mb-6">Especialistas en Cristales y Carrocería en la Región de Coquimbo</h1>
+            <p className="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-xl">Devolvemos la seguridad y estética a tu vehículo, camión o maquinaria pesada. Atención en Coquimbo, La Serena y zonas alejadas con materiales certificados y acabados impecables.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
                 href="/contacto#cotizacion"
@@ -87,8 +86,8 @@ export default function Home() {
               </div>
             </div>
             <div className="p-6">
-              <h3 className="font-headline-md text-[20px] text-primary mb-2">Reemplazo de Cristales</h3>
-              <p className="font-body-md text-body-md text-on-surface-variant mb-4">Instalación y recambio de parabrisas, lunetas y vidrios laterales con sellos originales y garantía de filtración cero.</p>
+              <h3 className="font-headline-md text-[20px] text-primary mb-2">Cambio de Parabrisas</h3>
+              <p className="font-body-md text-body-md text-on-surface-variant mb-4">Instalación y recambio de parabrisas, lunetas y vidrios laterales en Coquimbo y La Serena con sellos originales y garantía de filtración cero.</p>
               <a className="inline-flex items-center gap-1 font-label-bold text-label-bold text-secondary hover:text-secondary-container transition-colors" href="/servicios">
                 Conocer más <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
               </a>
@@ -105,8 +104,8 @@ export default function Home() {
               />
             </div>
             <div className="p-6">
-              <h3 className="font-headline-md text-[20px] text-primary mb-2">Desabolladura de Precisión</h3>
-              <p className="font-body-md text-body-md text-on-surface-variant mb-4">Reparación estructural y estética de carrocerías. Eliminación de abolladuras complejas recuperando las líneas originales de fábrica.</p>
+              <h3 className="font-headline-md text-[20px] text-primary mb-2">Taller de Desabolladura</h3>
+              <p className="font-body-md text-body-md text-on-surface-variant mb-4">Reparación de autos chocados en Coquimbo. Eliminación de abolladuras complejas recuperando las líneas originales de fábrica para toda la región.</p>
               <a className="inline-flex items-center gap-1 font-label-bold text-label-bold text-secondary hover:text-secondary-container transition-colors" href="/servicios">
                 Conocer más <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
               </a>
@@ -123,8 +122,8 @@ export default function Home() {
               />
             </div>
             <div className="p-6">
-              <h3 className="font-headline-md text-[20px] text-primary mb-2">Pintura Profesional</h3>
-              <p className="font-body-md text-body-md text-on-surface-variant mb-4">Pintura al horno con igualación de color computarizada. Acabados premium resistentes a los rayos UV y condiciones climáticas extremas.</p>
+              <h3 className="font-headline-md text-[20px] text-primary mb-2">Pintura Automotriz</h3>
+              <p className="font-body-md text-body-md text-on-surface-variant mb-4">Pintura al horno para vehículos de La Serena y Coquimbo. Acabados premium resistentes a los rayos UV con igualación de color computarizada.</p>
               <a className="inline-flex items-center gap-1 font-label-bold text-label-bold text-secondary hover:text-secondary-container transition-colors" href="/servicios">
                 Conocer más <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
               </a>
@@ -139,7 +138,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
             <div>
               <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">Encuéntrenos en Coquimbo</h2>
-              <p className="font-body-md text-body-md text-on-surface-variant mb-8">Visite nuestro taller equipado con tecnología de punta para una evaluación sin compromiso de su vehículo.</p>
+              <p className="font-body-md text-body-md text-on-surface-variant mb-8">Visite nuestro taller equipado con tecnología de punta. Atendemos a clientes de Coquimbo, La Serena, Ovalle, Vicuña e Illapel con evaluación sin compromiso.</p>
               
               <div className="space-y-6">
                 <div className="flex items-start gap-4">

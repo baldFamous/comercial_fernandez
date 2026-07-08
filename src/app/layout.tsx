@@ -14,24 +14,36 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Comercial Fernández | Especialistas en Cristales y Carrocería",
-  description:
-    "Taller mecánico en Coquimbo especializado en instalación de parabrisas, lunetas, desabolladura, pintura y venta de repuestos y llantas.",
+  title: 'Comercial Fernandez de la Peña | Parabrisas y Pintura en Coquimbo',
+  description: 'Especialistas en cambio de parabrisas, lunetas, desabolladura y pintura automotriz en toda la Región de Coquimbo. Atención a vehículos, camiones y maquinaria pesada.',
+  alternates: {
+    canonical: 'https://comercial-fernandez.com',
+  },
   openGraph: {
-    title: "Comercial Fernández",
-    description: "Expertos en cristales, carrocería y repuestos en Coquimbo.",
-    locale: "es_CL",
-    type: "website",
+    title: 'Comercial Fernandez de la Peña | Cristales y Carrocería',
+    description: 'Cotiza tu cambio de parabrisas o servicio de pintura automotriz vía WhatsApp de forma inmediata. Cobertura en Coquimbo, La Serena y toda la región.',
+    url: 'https://comercial-fernandez.com',
+    siteName: 'Comercial Fernandez de la Peña',
+    images: [
+      {
+        url: 'https://comercial-fernandez.com/images/fondo-parabrisas-opengraph.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Inventario de Parabrisas Comercial Fernandez de la Peña',
+      },
+    ],
+    locale: 'es_CL',
+    type: 'website',
   },
 };
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "AutoBodyShop",
-  name: "Comercial Fernández",
-  image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDSes1c6wldJjV_33yFZ9QgzZh4XLv6CYJ4orR6tEeHNvumxPqcXOrF0gZzkjqiYl96KDljqjIr38SkhGHhZMmN5b6Ti2tfIvbIiy7QtY-xMxvWH3EsvSZQiLxyJouzqTVqDVMNZQiITAIIScqbKqzyDoDUwoKr_zK7uIl8cuc_4EI65UgbTDMrcREDoWYlPyZvYPAW3yJ3w0QhH-cCSiCjtA9f2HFzz4IJSqxUhC1pXA-Brm-J4xILRKoyvF2UPDnea3ca0k2wbMY",
+  name: "Comercial Fernandez de la Peña",
+  image: "https://comercial-fernandez.com/images/fondo-parabrisas-opengraph.jpg",
   "@id": "",
-  url: "https://tallerfernandez.vercel.app", 
+  url: "https://comercial-fernandez.com", 
   telephone: "+56912345678",
   address: {
     "@type": "PostalAddress",
@@ -105,18 +117,11 @@ export default function RootLayout({
         {/* Mobile Sticky Contact Bar */}
         <div className="md:hidden fixed bottom-0 left-0 right-0 glass-panel p-margin-mobile flex gap-4 z-50 shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
           <a 
-            href="tel:+56912345678"
-            className="flex-1 flex justify-center items-center gap-2 border border-primary text-primary bg-surface font-label-bold text-label-bold py-3 rounded-DEFAULT"
-          >
-            <span className="material-symbols-outlined" data-icon="call">call</span>
-            Llamar
-          </a>
-          <a 
             href="/contacto#cotizacion"
-            className="flex-1 flex justify-center items-center gap-2 bg-secondary text-on-secondary font-label-bold text-label-bold py-3 rounded-DEFAULT shadow-sm"
+            className="w-full flex justify-center items-center gap-2 bg-secondary text-on-secondary font-label-bold text-label-bold py-3 rounded-DEFAULT shadow-sm"
           >
             <span className="material-symbols-outlined" data-icon="chat">chat</span>
-            Cotizar
+            Solicitar Cotización
           </a>
         </div>
       </body>

@@ -5,7 +5,7 @@ export default function ServiciosPage() {
       <section className="text-center mb-section-gap">
         <h1 className="font-display-lg text-display-lg text-primary mb-6">Nuestros Servicios</h1>
         <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
-          Calidad, precisión y tecnología al servicio de tu vehículo. En Comercial Fernández somos expertos en restaurar y mantener la integridad mecánica y estética de tu automóvil.
+          Calidad, precisión y tecnología al servicio de tu vehículo. En Comercial Fernandez de la Peña somos expertos en cambio de parabrisas, desabolladura y pintura automotriz en toda la Región de Coquimbo.
         </p>
       </section>
 
@@ -24,7 +24,7 @@ export default function ServiciosPage() {
               <span className="material-symbols-outlined">car_repair</span>
               <span className="font-label-bold text-label-bold uppercase tracking-wider">Especialidad</span>
             </div>
-            <h2 className="font-headline-lg text-headline-lg text-primary mb-4">Reemplazo de Parabrisas</h2>
+            <h2 className="font-headline-lg text-headline-lg text-primary mb-4">Cambio de Parabrisas en Coquimbo</h2>
             <p className="font-body-md text-body-md text-on-surface-variant mb-6">
               Utilizamos cristales de calidad original (OEM) y poliuretanos de secado rápido, garantizando una instalación segura que recupera la rigidez estructural de tu vehículo en tiempo récord. Nuestro proceso asegura un sellado perfecto contra filtraciones y ruidos.
             </p>
@@ -58,7 +58,7 @@ export default function ServiciosPage() {
           <div className="p-8 flex-grow flex flex-col">
             <div className="flex items-center gap-2 mb-3 text-secondary">
               <span className="material-symbols-outlined">build</span>
-              <h2 className="font-headline-md text-headline-md text-primary">Desabolladura</h2>
+              <h2 className="font-headline-md text-headline-md text-primary">Taller de Desabolladura</h2>
             </div>
             <p className="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
               Restauramos la línea original de tu vehículo tras colisiones mediante técnicas de desabollado de precisión. Empleamos herramientas de última generación y bancadas de tracción computarizadas para asegurar que la geometría del chasis vuelva a las especificaciones exactas del fabricante, garantizando tu seguridad.
@@ -83,7 +83,7 @@ export default function ServiciosPage() {
           <div className="p-8 flex-grow flex flex-col">
             <div className="flex items-center gap-2 mb-3 text-secondary">
               <span className="material-symbols-outlined">format_paint</span>
-              <h2 className="font-headline-md text-headline-md text-primary">Pintura Automotriz</h2>
+              <h2 className="font-headline-md text-headline-md text-primary">Pintura Automotriz La Serena</h2>
             </div>
             <p className="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
               Acabados perfectos gracias a nuestra cabina de pintura presurizada y sistema de igualación de color computarizado. Utilizamos pinturas base agua amigables con el medio ambiente y barnices de alta resistencia (High Solid) que proporcionan un brillo duradero y protección superior contra los rayos UV y el desgaste diario.
