@@ -14,7 +14,9 @@ export default function ContactoPage() {
     const details = formData.get("details") as string;
 
     const serviceLabels: Record<string, string> = {
-      cristales: "Cambio de Cristales",
+      cristales_maquinaria: "Cristales para Maquinaria Pesada",
+      cristales_camiones: "Parabrisas de Camiones/Buses",
+      cristales_vehiculos: "Parabrisas de Auto/SUV",
       desabolladura: "Desabolladura",
       pintura: "Pintura Automotriz",
       otro: "Otro / Consulta General",
@@ -55,10 +57,10 @@ Detalles de la solicitud:
         <div className="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
           <div className="space-y-6">
             <h1 className="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary">
-              Agenda tu reparación con expertos en Coquimbo.
+              Cotiza el cristal para tu maquinaria o flota en Coquimbo.
             </h1>
             <p className="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
-              Estamos en Coquimbo listos para devolverle la vida a tu vehículo. Atendemos a clientes de La Serena y toda la región. Cotiza en línea, llámanos directamente o visítanos en nuestro taller mecánico especializado en cambio de parabrisas, desabolladura y pintura automotriz.
+              Servicio en terreno para minería, transporte y particulares en La Serena, Coquimbo, Ovalle y zonas interiores. Llena el formulario o contáctanos por WhatsApp para una atención rápida y con stock inmediato.
             </p>
             {/* Direct Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -104,15 +106,17 @@ Detalles de la solicitud:
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Vehicle Make/Model */}
                 <div className="space-y-2">
-                  <label className="font-label-bold text-label-bold text-primary block" htmlFor="vehicle">Marca y Modelo del Vehículo</label>
-                  <input required className="w-full bg-surface-bright border-outline-variant text-on-surface focus:border-primary focus:ring-primary rounded-lg font-body-md text-body-md p-3 transition-colors border" id="vehicle" name="vehicle" placeholder="Ej: Toyota Hilux 2020" type="text" />
+                  <label className="font-label-bold text-label-bold text-primary block" htmlFor="vehicle">Maquinaria, Camión o Vehículo</label>
+                  <input required className="w-full bg-surface-bright border-outline-variant text-on-surface focus:border-primary focus:ring-primary rounded-lg font-body-md text-body-md p-3 transition-colors border" id="vehicle" name="vehicle" placeholder="Ej: Retroexcavadora CAT o Toyota Hilux" type="text" />
                 </div>
                 {/* Service Type */}
                 <div className="space-y-2">
                   <label className="font-label-bold text-label-bold text-primary block" htmlFor="service">Tipo de Servicio Principal</label>
                   <select required className="w-full bg-surface-bright border-outline-variant text-on-surface focus:border-primary focus:ring-primary rounded-lg font-body-md text-body-md p-3 transition-colors border" id="service" name="service" defaultValue="">
                     <option disabled value="">Selecciona un servicio</option>
-                    <option value="cristales">Cambio de Parabrisas o Cristales</option>
+                    <option value="cristales_maquinaria">Cristales para Maquinaria Pesada</option>
+                    <option value="cristales_camiones">Parabrisas de Camiones/Buses</option>
+                    <option value="cristales_vehiculos">Parabrisas de Auto/SUV</option>
                     <option value="desabolladura">Taller de Desabolladura</option>
                     <option value="pintura">Pintura Automotriz</option>
                     <option value="otro">Otro / Consulta General</option>
@@ -145,11 +149,11 @@ Detalles de la solicitud:
               <ul className="space-y-3 font-body-md text-body-md">
                 <li className="flex justify-between items-center border-b border-primary-container pb-2">
                   <span className="font-label-bold">Lunes a Viernes</span>
-                  <span>09:00 - 18:00 hrs</span>
+                  <span>09:00 - 13:00 y 15:00 - 18:00 hrs</span>
                 </li>
                 <li className="flex justify-between items-center border-b border-primary-container pb-2">
                   <span className="font-label-bold">Sábado</span>
-                  <span>09:00 - 14:00 hrs</span>
+                  <span>09:00 - 13:00 hrs</span>
                 </li>
                 <li className="flex justify-between items-center text-on-tertiary-container pt-1">
                   <span className="font-label-bold">Domingo y Festivos</span>

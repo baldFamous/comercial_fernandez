@@ -21,10 +21,13 @@ export default function Header() {
         <div className="flex items-center gap-3">
           <Link 
             href="/" 
-            className="font-headline-md text-[18px] md:text-headline-md font-bold text-primary dark:text-primary-fixed"
+            className="flex flex-col leading-none font-bold text-primary dark:text-primary-fixed w-max"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            Comercial Fernández
+            <div className="flex justify-between w-full text-[10px] md:text-[12px] uppercase font-black text-on-surface-variant dark:text-surface-variant select-none">
+              <span>C</span><span>O</span><span>M</span><span>E</span><span>R</span><span>C</span><span>I</span><span>A</span><span>L</span>
+            </div>
+            <span className="text-[16px] md:text-[18px] font-extrabold mt-0.5 whitespace-nowrap">Fernández de la Peña</span>
           </Link>
         </div>
         

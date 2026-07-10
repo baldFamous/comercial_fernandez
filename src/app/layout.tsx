@@ -14,22 +14,22 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: 'Comercial Fernandez de la Peña | Parabrisas y Pintura en Coquimbo',
-  description: 'Especialistas en cambio de parabrisas, lunetas, desabolladura y pintura automotriz en toda la Región de Coquimbo. Atención a vehículos, camiones y maquinaria pesada.',
+  title: 'Parabrisas para Maquinaria Pesada y Camiones | Comercial Fernandez de la Peña',
+  description: 'Venta e instalación de cristales para maquinaria pesada, camiones de alto tonelaje y vehículos en la Región de Coquimbo. Servicio en terreno a minería y transporte.',
   alternates: {
-    canonical: 'https://comercial-fernandez.com',
+    canonical: 'https://www.comercial-fernandez-coquimbo.com',
   },
   openGraph: {
-    title: 'Comercial Fernandez de la Peña | Cristales y Carrocería',
-    description: 'Cotiza tu cambio de parabrisas o servicio de pintura automotriz vía WhatsApp de forma inmediata. Cobertura en Coquimbo, La Serena y toda la región.',
-    url: 'https://comercial-fernandez.com',
+    title: 'Cristales para Maquinaria y Camiones | Comercial Fernandez de la Peña',
+    description: 'Servicio en terreno para cambio de parabrisas industriales y vehículos en Coquimbo, La Serena y valles interiores. Cotiza ahora.',
+    url: 'https://www.comercial-fernandez-coquimbo.com',
     siteName: 'Comercial Fernandez de la Peña',
     images: [
       {
-        url: 'https://comercial-fernandez.com/images/fondo-parabrisas-opengraph.jpg',
+        url: 'https://www.comercial-fernandez-coquimbo.com/img15.webp',
         width: 1200,
         height: 630,
-        alt: 'Inventario de Parabrisas Comercial Fernandez de la Peña',
+        alt: 'Artesanía Técnica Confiable en Maquinaria Pesada - Comercial Fernandez de la Peña',
       },
     ],
     locale: 'es_CL',
@@ -41,10 +41,10 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "AutoBodyShop",
   name: "Comercial Fernandez de la Peña",
-  image: "https://comercial-fernandez.com/images/fondo-parabrisas-opengraph.jpg",
+  image: "https://www.comercial-fernandez-coquimbo.com/img15.webp",
   "@id": "",
-  url: "https://comercial-fernandez.com", 
-  telephone: "+56912345678",
+  url: "https://www.comercial-fernandez-coquimbo.com", 
+  telephone: "+56985007356",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Baquedano 605",
@@ -93,14 +93,21 @@ export default function RootLayout({
         <footer className="bg-primary dark:bg-tertiary-container full-width pb-[80px] md:pb-0">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
             {/* Brand Column */}
-            <div className="flex flex-col gap-4">
-              <span className="font-headline-md text-headline-md font-bold text-on-primary">Comercial Fernández</span>
-              <p className="font-body-md text-body-md text-on-primary-container dark:text-on-tertiary-container max-w-sm">Especialistas en la restauración estética y estructural de vehículos en la región de Coquimbo.</p>
+            <div className="flex flex-col gap-3">
+              <div className="flex flex-col leading-none w-max">
+                <div className="flex justify-between w-full text-[10px] md:text-[12px] uppercase font-black text-on-primary/90 select-none">
+                  <span>C</span><span>O</span><span>M</span><span>E</span><span>R</span><span>C</span><span>I</span><span>A</span><span>L</span>
+                </div>
+                <span className="font-headline-md text-headline-md font-bold text-on-primary mt-1 whitespace-nowrap">Fernández de la Peña</span>
+              </div>
+              <p className="font-body-md text-body-md text-on-primary-container dark:text-on-tertiary-container max-w-sm">Especialistas en cristales para maquinaria pesada, camiones y flotas. Cobertura en terreno en toda la Región de Coquimbo.</p>
             </div>
             {/* Info Column */}
             <div className="flex flex-col gap-3">
               <a className="font-body-md text-body-md text-on-primary-container dark:text-on-tertiary-container hover:text-secondary-fixed transition-colors active:opacity-90" href="#">Horarios: Lun-Vie 09:00 - 18:00</a>
               <a className="font-body-md text-body-md text-on-primary-container dark:text-on-tertiary-container hover:text-secondary-fixed transition-colors active:opacity-90" href="https://maps.google.com/?q=Baquedano+605,+Coquimbo" target="_blank" rel="noreferrer">Baquedano 605, Coquimbo</a>
+              <a className="font-body-md text-body-md text-on-primary-container dark:text-on-tertiary-container hover:text-secondary-fixed transition-colors active:opacity-90" href="mailto:comercial.fernandez.coquimbo@gmail.com">comercial.fernandez.coquimbo@gmail.com</a>
+              <a className="font-body-md text-body-md text-on-primary-container dark:text-on-tertiary-container hover:text-secondary-fixed transition-colors active:opacity-90" href="tel:+56985007356">+56 9 8500 7356</a>
             </div>
             {/* Legal Column */}
             <div className="flex flex-col gap-3 md:items-end">
@@ -109,7 +116,7 @@ export default function RootLayout({
             </div>
             {/* Copyright */}
             <div className="col-span-1 md:col-span-3 mt-8 pt-8 border-t border-on-primary/10 text-center md:text-left">
-              <p className="font-caption text-caption text-on-primary-container dark:text-on-tertiary-container">© 2024 Comercial Fernández. Expertos en Cristales, Desabolladura y Pintura.</p>
+              <p className="font-caption text-caption text-on-primary-container dark:text-on-tertiary-container">© 2024 Comercial Fernández. Cristales Industriales y Automotrices.</p>
             </div>
           </div>
         </footer>

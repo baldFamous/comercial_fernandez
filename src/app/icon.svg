@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Dark Indigo/Blue Background matching theme -->
+  <rect width="32" height="32" rx="7" fill="#00081e" />
+  
+  <!-- Trapezoidal Windshield/Glass Frame in Crimson Red -->
+  <path d="M 6 9 L 26 9 C 27.5 9 28.2 9.8 27.5 11.5 L 24.5 21.5 C 24 23 22.5 24 21 24 L 11 24 C 9.5 24 8 23 7.5 21.5 L 4.5 11.5 C 3.8 9.8 4.5 9 6 9 Z" fill="none" stroke="#bb0014" stroke-width="2" stroke-linejoin="round" />
+  
+  <!-- Stylized brand letters -->
+  <text x="16.5" y="16.5" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="11" fill="#ffffff" text-anchor="middle" dominant-baseline="central">CF</text>
+</svg>

@@ -14,22 +14,22 @@ export default function Home() {
         
         <div className="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24">
           <div className="max-w-2xl">
-            <h1 className="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary mb-6">Especialistas en Cristales y Carrocería en la Región de Coquimbo</h1>
-            <p className="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-xl">Devolvemos la seguridad y estética a tu vehículo, camión o maquinaria pesada. Atención en Coquimbo, La Serena y zonas alejadas con materiales certificados y acabados impecables.</p>
+            <h1 className="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary mb-6">Parabrisas y Cristales para Maquinaria Pesada, Vehículos y Camiones en la Región de Coquimbo</h1>
+            <p className="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-xl">Servicio en terreno e instalación express para minería, transporte y agro en toda la región. Minimizamos el tiempo de detención de tus equipos con stock inmediato.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
                 href="/contacto#cotizacion"
                 className="flex items-center justify-center gap-2 bg-secondary text-on-secondary font-headline-md text-label-bold md:text-headline-md px-6 py-4 rounded-DEFAULT hover:bg-secondary-container transition-all shadow-md active:scale-[0.98]"
               >
-                <span className="material-symbols-outlined text-[20px]">chat</span>
-                Cotizar por WhatsApp
+                <span className="material-symbols-outlined text-[20px]">precision_manufacturing</span>
+                Cotizar Maquinaria / Camión
               </a>
               <a 
-                href="#ubicacion"
+                href="/contacto#cotizacion"
                 className="flex items-center justify-center gap-2 border-2 border-primary text-primary font-headline-md text-label-bold md:text-headline-md px-6 py-4 rounded-DEFAULT hover:bg-surface-container transition-all active:scale-[0.98]"
               >
-                <span className="material-symbols-outlined text-[20px]">location_on</span>
-                Ver Ubicación
+                <span className="material-symbols-outlined text-[20px]">directions_car</span>
+                Cotizar Vehículo Particular
               </a>
             </div>
           </div>
@@ -76,18 +76,18 @@ export default function Home() {
           <div className="bg-surface-container-lowest rounded-lg border border-surface-variant overflow-hidden group hover:shadow-lg transition-all duration-300">
             <div className="h-48 overflow-hidden bg-surface-container-high relative">
               <img 
-                alt="Reemplazo de Cristales" 
+                alt="Cristales para Maquinaria Pesada" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
-                src="./img3.webp"
+                src="./img11.webp"
               />
               <div className="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded-full font-label-bold text-[12px] flex items-center gap-1">
-                <span className="material-symbols-outlined text-[14px]">car_repair</span>
+                <span className="material-symbols-outlined text-[14px]">precision_manufacturing</span>
                 Especialidad
               </div>
             </div>
             <div className="p-6">
-              <h3 className="font-headline-md text-[20px] text-primary mb-2">Cambio de Parabrisas</h3>
-              <p className="font-body-md text-body-md text-on-surface-variant mb-4">Instalación y recambio de parabrisas, lunetas y vidrios laterales en Coquimbo y La Serena con sellos originales y garantía de filtración cero.</p>
+              <h3 className="font-headline-md text-[20px] text-primary mb-2">Parabrisas para Maquinaria Pesada</h3>
+              <p className="font-body-md text-body-md text-on-surface-variant mb-4">Instalación de cristales para excavadoras, retroexcavadoras, grúas y maquinaria agrícola. Servicio en terreno (Ovalle, Andacollo, minería) con cristales de alta resistencia.</p>
               <a className="inline-flex items-center gap-1 font-label-bold text-label-bold text-secondary hover:text-secondary-container transition-colors" href="/servicios">
                 Conocer más <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
               </a>
@@ -98,7 +98,25 @@ export default function Home() {
           <div className="bg-surface-container-lowest rounded-lg border border-surface-variant overflow-hidden group hover:shadow-lg transition-all duration-300">
             <div className="h-48 overflow-hidden bg-surface-container-high relative">
               <img 
-                alt="Desabolladura" 
+                alt="Flotas de Camiones y Buses" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                src="./img3.webp"
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="font-headline-md text-[20px] text-primary mb-2">Flotas de Camiones y Buses</h3>
+              <p className="font-body-md text-body-md text-on-surface-variant mb-4">Cambio de vidrios de camiones en La Serena y toda la región. Instalación rápida para minimizar tiempos de inactividad de tu flota de transporte.</p>
+              <a className="inline-flex items-center gap-1 font-label-bold text-label-bold text-secondary hover:text-secondary-container transition-colors" href="/servicios">
+                Conocer más <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+          
+          {/* Service 3 */}
+          <div className="bg-surface-container-lowest rounded-lg border border-surface-variant overflow-hidden group hover:shadow-lg transition-all duration-300">
+            <div className="h-48 overflow-hidden bg-surface-container-high relative">
+              <img 
+                alt="Vehículos Particulares y Sedanes" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                 src="./img2.webp"
               />
@@ -111,23 +129,23 @@ export default function Home() {
               </a>
             </div>
           </div>
-          
-          {/* Service 3 */}
-          <div className="bg-surface-container-lowest rounded-lg border border-surface-variant overflow-hidden group hover:shadow-lg transition-all duration-300">
-            <div className="h-48 overflow-hidden bg-surface-container-high relative">
-              <img 
-                alt="Pintura Profesional" 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
-                src="./img10.webp"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="font-headline-md text-[20px] text-primary mb-2">Pintura Automotriz</h3>
-              <p className="font-body-md text-body-md text-on-surface-variant mb-4">Pintura al horno para vehículos de La Serena y Coquimbo. Acabados premium resistentes a los rayos UV con igualación de color computarizada.</p>
-              <a className="inline-flex items-center gap-1 font-label-bold text-label-bold text-secondary hover:text-secondary-container transition-colors" href="/servicios">
-                Conocer más <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
-              </a>
-            </div>
+        </div>
+      </section>
+
+      {/* Regional Coverage Semantic Block */}
+      <section className="bg-surface-container-high py-16 w-full border-t border-outline-variant/30">
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+          <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Cobertura en Terreno en la Región de Coquimbo</h2>
+          <p className="font-body-md text-body-md text-on-surface-variant max-w-3xl mx-auto mb-8">
+            Nuestro principal diferencial es llegar donde tu flota o maquinaria nos necesite. Ofrecemos servicio a domicilio y en faena en <strong>Coquimbo, La Serena, Ovalle, Andacollo, Vicuña, Los Vilos e Illapel</strong>. Especialistas en faenas mineras y agrícolas con equipos técnicos móviles altamente capacitados.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            {['Coquimbo', 'La Serena', 'Ovalle', 'Andacollo', 'Vicuña', 'Illapel', 'Los Vilos'].map(city => (
+              <span key={city} className="px-4 py-2 bg-surface border border-outline-variant rounded-full text-label-bold font-label-bold text-on-surface">
+                <span className="material-symbols-outlined text-[16px] align-middle mr-1 text-primary">location_on</span>
+                {city}
+              </span>
+            ))}
           </div>
         </div>
       </section>
@@ -157,7 +175,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="font-label-bold text-label-bold text-primary">Horario de Atención</h4>
-                    <p className="font-body-md text-body-md text-on-surface-variant">Lunes a Viernes: 09:00 - 18:30<br/>Sábados: 09:00 - 14:00</p>
+                    <p className="font-body-md text-body-md text-on-surface-variant">Lunes a Viernes: 09:00 - 13:00 y 15:00 - 18:00<br/>Sábados: 09:00 - 13:00</p>
                   </div>
                 </div>
                 
@@ -167,7 +185,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="font-label-bold text-label-bold text-primary">Contacto Directo</h4>
-                    <p className="font-body-md text-body-md text-on-surface-variant">+56 9 1234 5678<br/>contacto@comercialfernandez.cl</p>
+                    <p className="font-body-md text-body-md text-on-surface-variant">+56 9 8500 7356<br/>comercial.fernandez.coquimbo@gmail.com</p>
                   </div>
                 </div>
               </div>
