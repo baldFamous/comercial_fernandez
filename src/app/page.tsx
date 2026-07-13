@@ -14,8 +14,8 @@ export default function Home() {
         
         <div className="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24">
           <div className="max-w-2xl">
-            <h1 className="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary mb-6">Parabrisas y Cristales para Maquinaria Pesada, Vehículos y Camiones en la Región de Coquimbo</h1>
-            <p className="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-xl">Servicio en terreno e instalación express para minería, transporte y agro en toda la región. Minimizamos el tiempo de detención de tus equipos con stock inmediato.</p>
+            <h1 className="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary mb-6">Parabrisas Coquimbo: Cristales para Maquinaria Pesada, Camiones y Vehículos</h1>
+            <p className="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-xl">Servicio en terreno e instalación express de parabrisas en Coquimbo, La Serena y valles interiores. Minimizamos el tiempo de detención de tus equipos con stock inmediato y atención especializada.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
                 href="/contacto#cotizacion"

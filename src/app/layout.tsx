@@ -15,14 +15,15 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: 'Parabrisas para Maquinaria Pesada y Camiones | Comercial Fernandez de la Peña',
-  description: 'Venta e instalación de cristales para maquinaria pesada, camiones de alto tonelaje y vehículos en la Región de Coquimbo. Servicio en terreno a minería y transporte.',
+  title: 'Parabrisas Coquimbo | Maquinaria Pesada y Camiones | Comercial Fernandez',
+  description: 'Especialistas en cambio de parabrisas en Coquimbo. Venta e instalación de cristales para maquinaria pesada, camiones y vehículos. Servicio en terreno.',
+  keywords: ['parabrisas Coquimbo', 'cambio de parabrisas Coquimbo', 'cristales maquinaria pesada Coquimbo', 'parabrisas camiones La Serena', 'taller de parabrisas Coquimbo', 'Comercial Fernandez de la Peña'],
   alternates: {
     canonical: 'https://www.comercial-fernandez-coquimbo.com',
   },
   openGraph: {
-    title: 'Cristales para Maquinaria y Camiones | Comercial Fernandez de la Peña',
-    description: 'Servicio en terreno para cambio de parabrisas industriales y vehículos en Coquimbo, La Serena y valles interiores. Cotiza ahora.',
+    title: 'Parabrisas Coquimbo | Maquinaria y Camiones | Comercial Fernandez',
+    description: 'Especialistas en cambio de parabrisas en Coquimbo y servicio en terreno. Instalación rápida y garantizada para flotas y particulares.',
     url: 'https://www.comercial-fernandez-coquimbo.com',
     siteName: 'Comercial Fernandez de la Peña',
     images: [
@@ -38,34 +39,60 @@ export const metadata: Metadata = {
   },
 };
 
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "AutoBodyShop",
-  name: "Comercial Fernandez de la Peña",
-  image: "https://www.comercial-fernandez-coquimbo.com/img15.webp",
-  "@id": "",
-  url: "https://www.comercial-fernandez-coquimbo.com", 
-  telephone: "+56985007356",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Baquedano 605",
-    addressLocality: "Coquimbo",
-    addressRegion: "Coquimbo",
-    postalCode: "1770000",
-    addressCountry: "CL",
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoBodyShop",
+    "name": "Comercial Fernandez de la Peña",
+    "image": "https://www.comercial-fernandez-coquimbo.com/img15.webp",
+    "@id": "https://www.comercial-fernandez-coquimbo.com/#business",
+    "url": "https://www.comercial-fernandez-coquimbo.com", 
+    "telephone": "+56985007356",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Baquedano 605",
+      "addressLocality": "Coquimbo",
+      "addressRegion": "Coquimbo",
+      "postalCode": "1770000",
+      "addressCountry": "CL",
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -29.9623, 
+      "longitude": -71.33218,
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "18:00",
+    }
   },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: -29.9623, 
-    longitude: -71.33218,
-  },
-  openingHoursSpecification: {
-    "@type": "OpeningHoursSpecification",
-    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    opens: "09:00",
-    closes: "18:00",
-  },
-};
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "SiteNavigationElement",
+        "position": 1,
+        "name": "Servicios en Terreno",
+        "url": "https://www.comercial-fernandez-coquimbo.com/servicios"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "position": 2,
+        "name": "Cotizar y Contacto",
+        "url": "https://www.comercial-fernandez-coquimbo.com/contacto"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "position": 3,
+        "name": "Galería de Trabajos",
+        "url": "https://www.comercial-fernandez-coquimbo.com/galeria"
+      }
+    ]
+  }
+];
 
 export default function RootLayout({
   children,
@@ -78,7 +105,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </head>
       <body className={`${inter.variable} ${montserrat.variable} bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased`}>
