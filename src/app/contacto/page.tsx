@@ -44,7 +44,8 @@ Detalles de la solicitud:
   ${details || "No especificado"}
 ------------------------------------------`;
 
-    const whatsappUrl = generateWhatsAppLink(baseMessage);
+    const targetPhone = serviceKey === "cristales_maquinaria" ? "56929795168" : undefined;
+    const whatsappUrl = generateWhatsAppLink(baseMessage, targetPhone);
     window.open(whatsappUrl, "_blank", "noopener,noreferrer");
   };
 
