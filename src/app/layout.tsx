@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
 import Header from "@/components/Header";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
@@ -159,6 +160,7 @@ export default function RootLayout({
             Solicitar Cotización
           </a>
         </div>
+        <WhatsAppButton />
         <Analytics />
       </body>
     </html>
